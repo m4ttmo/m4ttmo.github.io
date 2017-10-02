@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matt O'Shea</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <style type="text/css">
+              .fullarticle {
+  width: 61%;
+  margin-right: 2%;
+  float: left;
+  position: absolute; top: 80px; left: 37%;
+  display: none;
+}
+
+
+.articlelist {
+  float: left;
+  width: 37%;
+}
+    </style>
+  
+
+</head>
+<body>
+<div class="articlelist">
+        <ul>
+            <li style="display:block;">ARTICLE 1</li>
+            <li style="display:block;">ARTICLE 2</li>
+            <li style="display:block;">ARTICLE 3</li>
+            <li style="display:block;">ARTICLE 4</li>
+        </ul>
+    </div>
+    <div class="fullarticle" id="article1">
+        <h1>ARTICLE 1</h1>
+        <p>ABCDEFGH</p>
+    </div>
+    <div class="fullarticle" id="article2">
+        <h1>ARTICLE 2</h1>
+        <p>ABCDEFGH</p>
+    </div>
+    <div class="fullarticle" id="article3">
+        <h1>ARTICLE 3</h1>
+        <p>ABCDEFGH</p>
+    </div>
+    <div class="fullarticle" id="article4">
+        <h1>ARTICLE 4</h1>
+        <p>ABCDEFGH</p>
+    </div>
+    <script type="text/javascript">
+        $('.articlelist ul li').click(function() {
+    var i = $(this).index();
+    $('.fullarticle').hide();
+    $('#article' + (i+1)).show();
+});
+    </script>
+</body>
+</html>
