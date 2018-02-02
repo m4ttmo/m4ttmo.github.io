@@ -8,6 +8,7 @@ html, body{
 	overflow: hidden;
 	font-family: 'Raleway', sans-serif;
 	color: #575757;
+    cursor: url('mehh.png'), crosshair;
 }
 .img{
 	background-image:url('pp.jpg');
