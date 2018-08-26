@@ -10,7 +10,7 @@ function validateForm() {
 }
 
 function submitForm (e) {
-    //e.preventDefault();
+    e.preventDefault();
     var FilmTitle = document.getElementById("FilmId").value;
     var ContentType = "_" + document.getElementById("ContId").value;
     var TypeModifier = document.getElementById("TypeModId").value;
