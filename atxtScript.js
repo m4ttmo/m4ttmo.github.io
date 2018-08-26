@@ -1,6 +1,6 @@
 
 function validateForm() {
-    document.getElementById("frm1").submit();
+    //document.getElementById("frm1").submit();
     var inpObj = document.getElementById("frm1");
     if (!inpObj.checkValidity()) {
         alert("Missing Fields");
@@ -9,8 +9,7 @@ function validateForm() {
     }; 
 }
 
-function submitForm (e) {
-    //e.preventDefault();
+function submitForm () {
     var FilmTitle = document.getElementById("FilmId").value;
     var ContentType = "_" + document.getElementById("ContId").value;
     var TypeModifier = document.getElementById("TypeModId").value;
