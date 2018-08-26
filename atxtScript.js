@@ -9,12 +9,8 @@ function validateForm() {
     }; 
 }
 
-<<<<<<< HEAD
 function submitForm () {
-=======
-function submitForm (e) {
     e.preventDefault();
->>>>>>> origin/master
     var FilmTitle = document.getElementById("FilmId").value;
     var ContentType = "_" + document.getElementById("ContId").value;
     var TypeModifier = document.getElementById("TypeModId").value;
